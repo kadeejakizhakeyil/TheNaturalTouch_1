@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheNaturalTouch", "TheNaturalTouch.csproj", "{869A668A-A043-4B47-BA42-487F13CB46B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{869A668A-A043-4B47-BA42-487F13CB46B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869A668A-A043-4B47-BA42-487F13CB46B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869A668A-A043-4B47-BA42-487F13CB46B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869A668A-A043-4B47-BA42-487F13CB46B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {424DBA4C-53D5-4BE1-A670-B49DDCB7152D}
+	EndGlobalSection
+EndGlobal
