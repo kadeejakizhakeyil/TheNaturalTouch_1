@@ -5,6 +5,8 @@ Team Name:Beta
 Team Members:Kadeeja Kizhakeyil(Dev), Olushola Whenu (Test), Naik Vrajkumar Mehulbhai(prod)
 Product Name:Towel
 Hypothetic Brand Name: The Natural Touch
+Created Structure for the product table
+confirmed with the attributes
 
 2024-06-10
 0010
@@ -17,6 +19,7 @@ Added a background image to the layout page by editing site.css file
 
 0049
 Add a Product class under Model folder
+Added 13 attributes for the towel product(Category,Price,Size,Color,Image,Material,FabricType,Pattern,Style,Theme,Shape,Feature)
 I Used the scaffolding tool to produce Create, Read, Update, and Delete (CRUD) pages for the product model.
 
 0200
@@ -26,4 +29,43 @@ Confirmed with table creation called Product.
 Ran the program, Confirmed the changes works:
 The URL to confirm
 https://localhost:7087/Products
+https://localhost:7087/Products/Create
+
+0239
+Once started to input new entries 
+Realized data type of Size field needs to be change
+Hence it is changed from double to string
+and the updated database is
+20240610063758_UpdateField
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products/Create
+
+0256
+This project has created with individual account as an authentication type 
+This Mvc app created with two database
+ApplicationDbContext database runs while executing individual account , 
+Executed the command Add-Migration InitialCreate -Context ApplicationDbContext using package manage console
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Identity/Account/Register
+Got confirmation message for the account registration
+To Confirm the account creation
+The URL to confirm
+https://localhost:7087/Identity/Account/Login
+Successfully login as a test individual account" teacher.123@gmail.com"
+
+0316
+Tested the with new entries
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products/Create
+https://localhost:7087/Products/Edit/1
+https://localhost:7087/Products/Details/1
+Form elements need to be change according to the attributes values
+
+
+
+
+
 
