@@ -64,9 +64,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Shape" class="control-label"></label>
-                <input asp-for="Shape" class="form-control" />
+                <Select asp-for="Shape" class="form-control">
+                <option value="">Select Shape ...</option>
+                <option value="Square">Square</option>
+                <option value="Rectangle">Rectangle</option>
+                </Select>
                 <span asp-validation-for="Shape" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
                 <label asp-for="Feature" class="control-label"></label>
                 <input asp-for="Feature" class="form-control" />

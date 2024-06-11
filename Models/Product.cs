@@ -10,6 +10,7 @@ namespace TheNaturalTouch.Models
         public string? Color { get; set; }
         public string? Image { get; set; }
         public string? Material { get; set; }
+        [Display(Name = "Fabric Type")]
         public string? FabricType { get; set; }
         public string? Pattern { get; set; }
         public string? Style { get; set; }
