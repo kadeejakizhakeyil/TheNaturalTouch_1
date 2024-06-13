@@ -15,7 +15,16 @@
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="Category" class="control-label"></label>
-                <input asp-for="Category" class="form-control" />
+                <Select asp-for="Category" class="form-control">
+                    <option value="">Select Category ...</option>
+                    <option value="Bath">Bath</option>
+                    <option value="Hair">Hair</option>
+                    <option value="Hand">Hand</option>
+                    <option value="Face">Face</option>
+                    <option value="Gym">Gym</option>
+                    <option value="Baby">Baby</option>
+
+                </Select>
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -33,14 +42,24 @@
                 <input asp-for="Color" class="form-control" />
                 <span asp-validation-for="Color" class="text-danger"></span>
             </div>
-            <div class="form-group">
+@*             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
                 <input asp-for="Image" class="form-control" />
                 <span asp-validation-for="Image" class="text-danger"></span>
-            </div>
+            </div> *@
             <div class="form-group">
                 <label asp-for="Material" class="control-label"></label>
-                <input asp-for="Material" class="form-control" />
+                <Select asp-for="Material" class="form-control">
+                    <option value="">Select Material ...</option>
+                    <option value="Cotton">Cotton</option>
+                    <option value="Cotton Blend">Cotton Blend</option>
+                    <option value="Linen">Linen</option>
+                    <option value="Microfiber">Microfiber</option>
+                    <option value="Nylon">Nylon</option>
+                    <option value="Polyester">Polyester</option>
+                    <option value="Rayon">Rayon</option>
+
+                </Select>
                 <span asp-validation-for="Material" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -48,9 +67,20 @@
                 <input asp-for="FabricType" class="form-control" />
                 <span asp-validation-for="FabricType" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
                 <label asp-for="Pattern" class="control-label"></label>
-                <input asp-for="Pattern" class="form-control" />
+                <Select asp-for="Pattern" class="form-control">
+                    <option value="">Select Pattern ...</option>
+                    <option value="Checkered">Checkered</option>
+                    <option value="Gingham">Gingham</option>
+                    <option value="Patchwork">Patchwork</option>
+                    <option value="Plaid">Plaid</option>
+                    <option value="Print">Print</option>
+                    <option value="Solid">Solid</option>
+                    <option value="Striped">Striped</option>
+
+                </Select>
                 <span asp-validation-for="Pattern" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -63,14 +93,30 @@
                 <input asp-for="Theme" class="form-control" />
                 <span asp-validation-for="Theme" class="text-danger"></span>
             </div>
+         
             <div class="form-group">
                 <label asp-for="Shape" class="control-label"></label>
-                <input asp-for="Shape" class="form-control" />
+                <Select asp-for="Shape" class="form-control">
+                    <option value="">Select Shape ...</option>
+                    <option value="Square">Square</option>
+                    <option value="Rectangle">Rectangle</option>
+                </Select>
                 <span asp-validation-for="Shape" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Feature" class="control-label"></label>
-                <input asp-for="Feature" class="form-control" />
+                <Select asp-for="Feature" class="form-control">
+                    <option value="">Select Feature ...</option>
+                    <option value="Breathable">Breathable</option>
+                    <option value="Lightweight">Lightweight</option>
+                    <option value="Lint Free">Lint Free</option>
+                    <option value="Long Lasting">Long Lasting</option>
+                    <option value="Quick Dry">Quick Dry</option>
+                    <option value="Skin Friendly">Skin Friendly</option>
+                    <option value="Super Absorbent">Super Absorbent</option>
+                    <option value="Super Soft">Super Soft</option>
+                    <option value="Zero Twist">Zero Twist</option>
+                </Select>
                 <span asp-validation-for="Feature" class="text-danger"></span>
             </div>
             <div class="form-group">

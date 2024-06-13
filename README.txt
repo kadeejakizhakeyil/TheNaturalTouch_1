@@ -66,7 +66,24 @@ https://localhost:7087/Products/Details/1
 1253
 Updated two fields in the product table not to allow NULL,  rest all fields set as allow NULL
 Form elements need to be change according to the attributes values
-Tried to change shape attribute from text element to select form element in create page of product
+Tried to change shape attribute from text element to select form element in createand edit page of product
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products/Create
+https://localhost:7087/Products/Edit/1
+https://localhost:7087/Products/Details/1
+
+2024-06-12
+2220
+Tried to change Category,Pattern and Feature attributes from text form element to select form element in create and edit page of product
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products/Create
+https://localhost:7087/Products/Edit/1
+https://localhost:7087/Products/Details/1
+
+
+
 
 
 
