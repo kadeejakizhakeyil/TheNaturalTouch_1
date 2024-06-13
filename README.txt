@@ -82,7 +82,12 @@ https://localhost:7087/Products/Create
 https://localhost:7087/Products/Edit/1
 https://localhost:7087/Products/Details/1
 
-
+2024-06-13
+0846
+Added Filter option for product Category on product index page 
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products
 
 
 

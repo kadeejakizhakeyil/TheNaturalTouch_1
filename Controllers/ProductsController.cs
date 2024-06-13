@@ -19,12 +19,29 @@ namespace TheNaturalTouch.Controllers
             _context = context;
         }
 
-        // GET: Products
-        public async Task<IActionResult> Index()
+        //GET: Products
+        //public async Task<IActionResult> Index()
+        //{
+        //    return _context.Product != null ?
+        //                View(await _context.Product.ToListAsync()) :
+        //                Problem("Entity set 'TheNaturalTouchContext.Product'  is null.");
+        //}
+        public async Task<IActionResult> Index(string searchString)
         {
-              return _context.Product != null ? 
-                          View(await _context.Product.ToListAsync()) :
-                          Problem("Entity set 'TheNaturalTouchContext.Product'  is null.");
+            if (_context.Product == null)
+            {
+                return Problem("Entity set 'TheNaturalTouchContext.Product'  is null.");
+            }
+
+            var products = from m in _context.Product
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Category!.Contains(searchString));
+            }
+
+            return View(await products.ToListAsync());
         }
 
         // GET: Products/Details/5
