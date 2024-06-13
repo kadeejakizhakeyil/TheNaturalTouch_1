@@ -17,6 +17,7 @@ namespace TheNaturalTouch.Models
         public string? Theme { get; set; }
         public string? Shape { get; set; }
         public string? Feature { get; set; }
+        public string? Rating { get; set; }
 
     }
 }

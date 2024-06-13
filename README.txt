@@ -89,6 +89,18 @@ Ran the program, Confirmed the changes works:
 The URL to confirm
 https://localhost:7087/Products
 
+1400
+Added Rating field to the product table
+Updated the Rating Attribute to all the relevant pages.
+Migrated database for new attributeRating 20240613183850_Rating.cs
+Added SeedData file to insert the entries to the product table
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products
+
+
+
+
 
 
 

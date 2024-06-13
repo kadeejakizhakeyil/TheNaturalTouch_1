@@ -73,7 +73,7 @@ namespace TheNaturalTouch.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Category,Price,Size,Color,Material,FabricType,Pattern,Style,Theme,Shape,Feature")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Category,Price,Size,Color,Material,FabricType,Pattern,Style,Theme,Shape,Feature,Rating")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +105,7 @@ namespace TheNaturalTouch.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,Price,Size,Color,Material,FabricType,Pattern,Style,Theme,Shape,Feature")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,Price,Size,Color,Material,FabricType,Pattern,Style,Theme,Shape,Feature,Rating")] Product product)
         {
             if (id != product.Id)
             {
