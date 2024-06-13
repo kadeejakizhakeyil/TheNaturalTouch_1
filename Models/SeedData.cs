@@ -91,7 +91,7 @@ public static class SeedData
                   {
                       Category = "Hand",
                       Price = 10,
-                      Size = "200x200 cm",
+                      Size = "250x200 cm",
                       Color = "white",
                       Material = "Cotton Blend",
                       FabricType = "100 % Cotton",
@@ -107,7 +107,7 @@ public static class SeedData
                    {
                        Category = "Face",
                        Price = 10,
-                       Size = "200x200 cm",
+                       Size = "250x200 cm",
                        Color = "white",
                        Material = "Cotton Blend",
                        FabricType = "100 % Cotton",
@@ -122,7 +122,7 @@ public static class SeedData
                     new Product
                     {
                         Category = "Gym",
-                        Price = 8,
+                        Price = 11,
                         Size = "150x200 cm",
                         Color = "Blue",
                         Material = "Cotton Blend",
@@ -155,7 +155,7 @@ public static class SeedData
                       {
                           Category = "Bath",
                           Price = 10,
-                          Size = "200x200 cm",
+                          Size = "200x150 cm",
                           Color = "white",
                           Material = "Cotton Blend",
                           FabricType = "100 % Cotton",
@@ -170,7 +170,7 @@ public static class SeedData
                        new Product
                        {
                            Category = "Baby",
-                           Price = 10,
+                           Price = 15,
                            Size = "30x30 cm",
                            Color = "Light Pink",
                            Material = "Cotton",
