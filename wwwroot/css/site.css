@@ -25,3 +25,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 20px;
+    font-family:cursive;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}

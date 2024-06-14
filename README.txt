@@ -105,6 +105,14 @@ Ran the program, Confirmed the changes works:
 The URL to confirm
 https://localhost:7087/Home/Aboutus
 
+1957
+Added a few style on aboutus page
+Added brand logo to the top of the web app
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Home/Aboutus
+
+
 
 
 
