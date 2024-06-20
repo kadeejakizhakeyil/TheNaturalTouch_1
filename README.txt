@@ -126,7 +126,14 @@ https://localhost:7087/Products
 Added Authentication and Authorization
 Registered an admin account 
 username: "admin123@gmail.com"
-Password: Admin123
+Password: Admin@123
+
+0212
+Added Authentication and Authorization
+Registered an admin account 
+username: "guest123@gmail.com"
+Password: Guest@123
+
 
 
 
