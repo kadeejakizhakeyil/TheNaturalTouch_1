@@ -122,7 +122,11 @@ Ran the program, Confirmed the changes works:
 The URL to confirm
 https://localhost:7087/Products
 
-
+0203
+Added Authentication and Authorization
+Registered an admin account 
+username: "admin123@gmail.com"
+Password: Admin123
 
 
 
