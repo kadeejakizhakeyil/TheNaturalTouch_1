@@ -15,54 +15,27 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Category)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Size)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Color)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th> *@
-            <th>
-                @Html.DisplayNameFor(model => model.Material)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FabricType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Pattern)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Style)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Theme)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Shape)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Feature)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rating)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="gallery">
 @foreach (var item in Model) {
-        <tr>
+          
+        <div class="gallery-item">
+                <img class="product_img"src="@item.Image" alt="@item.Image" width="600" height="400">
+
+                
+                <div class="overlay">
+                <a asp-action="Edit" asp-route-id="@item.Id"><img src="/Images/edit.png" class="icon_img" alt="Edit"></a>
+                <a asp-action="Details" asp-route-id="@item.Id"><img src="/Images/file.png" class="icon_img" alt="Details"></a>
+                <a asp-action="Delete" asp-route-id="@item.Id"><img src="/Images/trash.png" class="icon_img" alt="Delete"></a>
+                </div>
+            <div class="desc">
+                @Html.DisplayFor(modelItem => item.Category)
+                @Html.DisplayFor(modelItem => item.Style)
+                @Html.DisplayFor(modelItem => item.Material)
+                @Html.DisplayFor(modelItem => item.Color)
+            </div>
+              
+            </div>
+        /* <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Category)
             </td>
@@ -75,9 +48,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Color)
             </td>
-            @* <td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Image)
-            </td> *@
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Material)
             </td>
@@ -107,7 +80,6 @@
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
-        </tr>
+        </tr> */
 }
-    </tbody>
-</table>
+ </div>

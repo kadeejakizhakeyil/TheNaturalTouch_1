@@ -112,6 +112,18 @@ Ran the program, Confirmed the changes works:
 The URL to confirm
 https://localhost:7087/Home/Aboutus
 
+2024-06-20
+0846
+Tried to add product image to seedData
+Changed product index page to grid view
+Changed the Icon style for the acnchor tags
+Added additional style to site.css as per the need
+Ran the program, Confirmed the changes works:
+The URL to confirm
+https://localhost:7087/Products
+
+
+
 
 
 

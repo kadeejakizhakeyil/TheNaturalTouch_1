@@ -67,13 +67,15 @@ namespace TheNaturalTouch.Controllers
         {
             return View();
         }
+        
+
 
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Category,Price,Size,Color,Material,FabricType,Pattern,Style,Theme,Shape,Feature,Rating")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Category,Price,Size,Color,Image,Material,FabricType,Pattern,Style,Theme,Shape,Feature,Rating")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +107,7 @@ namespace TheNaturalTouch.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,Price,Size,Color,Material,FabricType,Pattern,Style,Theme,Shape,Feature,Rating")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,Price,Size,Color,Image,Material,FabricType,Pattern,Style,Theme,Shape,Feature,Rating")] Product product)
         {
             if (id != product.Id)
             {
